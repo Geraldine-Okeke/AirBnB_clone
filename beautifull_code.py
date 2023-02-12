@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def guess_game(x, y):
     magic_number = x
     no_of_attempts_made = 0
