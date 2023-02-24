@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>AirBnB clone</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-    <link rel="stylesheet" href="styles/6-filters.css">
-    <link rel="icon" href="images/icon.png">
-  </head>
+<head>
+  <title>3-index.html</title>
+ <link rel="stylesheet" href="/styles/3-common.css">
+ <link rel="stylesheet" href="/styles/3-footer.css">
+ <link rel="stylesheet" href="/styles/3-header.css">
+ <link rel="stylesheet" href="/styles/4-filters.css">
+ 
+</head>
+<body >
+   
+  <header>
+    <img class="logo" src="/images/airbnb.png" alt="">
+  </header>
 
-  <body>
-    <header></header>
-
-    <div class="container">
-      <section class="filters">
-        <div class="locations">
-          <h3>States</h3>
-          <h4>ie. New York/Virgina...</h4>
-          <div class="popover">
-            <h2>New York:</h2>
-            <ul>
-              <li>Buffalo</li>
-              <li>New York City</li>
-            </ul>
-            <h2>Virginia:</h2>
-            <ul>
-              <li>Charlottesville</li>
-              <li>Richmond</li>
-            </ul>
-          </div>
-
-        </div><div class="amenities">
-          <h3>Amenities</h3>
-          <h4>ie. Laundry/Internet...</h4>
-          <ul class="popover">
-            <li>Internet</li>
-            <li>TV</li>
-            <li>Kitchen</li>
-            <li>Iron</li>
-          </ul>
+  <div class="container">
+    <div class="state-div">
+      <p class="state"> States</p>
+      <p class="cal">California, Arizona</p>
+      <div class="ariz-cal">
+        <div class="ariz-div">
+          <p class="ariz-p">Arizona</p>
+          <p class="pg-p">Page</p>
+          <p class="pg2-p">page2</p>
         </div>
-        <button>Search</button>
-      </section>
+        <div class="cal-div">
+          <p class="cal-p">California</p>
+          <p class="san-p">San Francisco</p>
+          <p class="los-p">Los Altos</p>
+        </div>
+      </div>
     </div>
+      
+    
+    
+      <button >
+        <div class="amenities-div">
+          <p class="amenities">Amenities</p>
+          <p class="Internet">Internet, Kitchen</p>
+          <div class="internet-div">
+            <p class="internet-p"> Internet</p>
+            <p class="tv-p">Tv</p>
+            <p class="kitchen-p">Kitchen</p>
+            <p class="iron-p">Iron</p>
+          </div>
+        </div>
+        <input class="text" type="text" placeholder  ="Search">
+        
+      </button>
+      
+    
+  </div>
 
-    <footer>
-      Holberton School
-    </footer>
-  </body>
+  <footer>
+    Best School
+  </footer>
+  
+  
+</body>
 </html>
