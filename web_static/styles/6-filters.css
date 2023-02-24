@@ -1,118 +1,118 @@
-/*
- * === Filters class style ===
- */
-
-/* Filters style */
-.filters {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  display: inline-block;
-  height: 70px;
-  width: 100%;
+.container {
+    
+  max-width: 1000px;
+  margin-top: 30px;
+  position: absolute;
+  left: 300px;
+  color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+  
 
-/* Search button style */
-.filters button {
-  background: #ff5a5f;
+
+ button {
+  background-color: white;
+  color: white;
+  width: 500px;
+  height: 48px;
+  position: relative;
+  box-shadow: 2px 2px 5px black;
   border: none;
   border-radius: 4px;
-  color: #fff;
-  float: right;
-  font-size: 18px;
-  height: 48px;
-  margin: 12px 30px;
-  width: 20%;
+  display: flex;
+  flex-direction: row;
+
 }
 
-/* Search button hover opacity */
-.filters button:hover {
-  background-color: rgba(255, 90, 95, .9);
-}
 
-/* Locations and amenities style */
-.filters .locations,
-.filters .amenities {
-  display: inline-block;
-  height: 100%;
-  position: relative;
-  width: 25%;
-}
-
-/* Locations border */
-.filters .locations {
-  border-right: 1px solid #ddd;
-}
-
-/* Locations and amenities hover opacity */
-.filters .locations:hover,
-.filters .amenities:hover {
-  background-color: #fafafa;
-}
-
-/* Locations and amenities popover menu */
-.filters .popover {
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  display: none;
+.text {
+  background-color: #FF5A5F;
   position: absolute;
-  width: 100%;
+  right: 10px;
+  top: 10px;
+  color: white;
+  border: none;
+  height: 20px;
+  
+}
+.text::placeholder {
+  color: white;
+}
+.text:hover{
+  opacity: 90%;
 }
 
-/* Locations and amenities popover hover */
-.filters .locations:hover .popover,
-.filters .amenities:hover .popover {
-  display: block;
+.state-div {
+  width: 200px;
+  background-color: white;
+  height: 48px;
+  line-height: 3px;
+  box-shadow: 2px 2px 5px black;
+  
+  
+  
 }
-
-/* Locations list style */
-.filters .locations ul {
-  padding: 6px 0 6px 0;
+.amenities-div {
+  width: 250px;
+  background-color: white;
+  height: 48px;
+  line-height: 3px;
+  color: black;
+  text-align: justify;
+  margin-left: 40px;
 }
-
-/* Locations list element margin */
-.filters .locations li {
-  margin: 0 auto 6px 3em;
-}
-
-/* Amenities list element margin */
-.filters .amenities li {
-  margin: 12px auto 12px 30px;
-}
-
-/*
- * --- Filters header style ---
- */
-
-/* Header box sizing */
-.filters h2,
-.filters h3,
-.filters h4 {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Header 2 style */
-.filters h2 {
-  font-size: 16px;
+.state, .amenities {
+  font-family: Arial;
   font-weight: bold;
-  margin: 12px auto 0 30px;
-}
+  color: black;
 
-/* Header 3 style */
-.filters h3 {
-  font-size: 1.17em;
-  font-weight: 600;
-  height: 50%;
-  padding: 15.5px 0 0 30px;
+  
 }
-
-/* Header 4 style */
-.filters h4 {
+.state, .cal {
+  padding-left: 0px;
+  color: black;
+  margin-left: 40px;
+}
+.ariz-cal {
+  display: flex;
+  flex-direction: column;
+  box-shadow :2px 2px 5px black;
+  background-color: rgb(253, 253, 253);
+  color: black;
+  opacity: 0;
+  background-color: #FAFAFA;
+}
+.state-div:hover .ariz-cal{
+  opacity: 1
+}
+.ariz-p,.cal-p {
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: 900;
+}
+.pg-p,.pg2-p, .san-p,.los-p {
+  font-weight: 550;
   font-size: 14px;
-  font-weight: 400;
-  height: 50%;
-  padding: 4.5px 0 12px 30px;
+  font-family: Arial;
+}
+.internet-div {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  box-shadow :2px 2px 3px black;
+  margin-left: -47px;
+  width: 200px;
+  padding-left: 50px;
+  line-height: 7px;
+  background-color: #FAFAFA;
+  opacity: 0;
+}
+.amenities-div:hover .internet-div {
+  opacity: 1;
+}
+.internet-div p {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 550;
 }
